@@ -1,0 +1,699 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /*    border: 1px dashed red;*/
+}
+
+/* FONTS IN PROJECT */
+
+@font-face {
+    font-family: 'Raleway';
+    src: url(fonts/ralewaybd.ttf);
+}
+
+/*
+.raleway {
+    font-family: 'Raleway', sans-serif;
+}
+*/
+
+@font-face {
+    font-family: 'Montserrat';
+}
+
+/*
+.montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+*/
+
+@font-face {
+    font-family: 'Playfair Display';
+}
+
+/*
+.playfairDisplay {
+    font-family: 'Playfair Display', serif;
+}
+*/
+
+/*GENERAL CLASSES*/
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    margin: auto;
+    font-style: italic;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    float: left;
+    /*    z-index: 2;*/
+}
+
+h3 {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 22px;
+    margin: auto;
+    color: white;
+    font-weight: normal;
+}
+
+
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    margin: 0 auto;
+    letter-spacing: 0.1em;
+}
+
+/*
+h4 {
+    font-family: 'Alegreya', serif;
+    font-size: 20px;
+    margin: auto;
+    color: #a47d5e;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+*/
+
+/*
+h6 {
+    max-width: 350px;
+    font-family: 'Alegreya', serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #b8b5b1;
+}
+*/
+
+h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 180px;
+    font-weight: bold;
+    color: rgb(247, 247, 247);
+    text-transform: uppercase;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    word-spacing: 0.25em;
+    line-height: 1.3em;
+    font-weight: normal;
+    text-align: left;
+    /*    padding-bottom: 30px;*/
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.center {
+    float: none;
+}
+
+.white {
+    color: white;
+}
+
+.black {
+    color: black;
+}
+
+.blue {
+    color: deepskyblue;
+}
+
+.squareImg {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    z-index: 2;
+}
+
+.price {
+    width: auto;
+    height: auto;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.btn {
+    -webkit-border-radius: 2;
+    -moz-border-radius: 2;
+    border-radius: 2px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 14px;
+    background: rgb(66, 182, 255);
+    text-transform: uppercase;
+    /*    text-decoration: none;*/
+    min-width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    display: inline-block;
+}
+
+
+li {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+.brightness {
+    background-color: white;
+/*    display: inline-block;*/
+}
+
+.brightness img:hover {
+    opacity: .6;
+}
+
+
+
+/*SECTIONS CLASSES*/
+
+/*FIRST WAVE SECTION WITH PRODUCTS*/
+
+.wave1 {
+    background: url(surfers-co-assets/wave1.jpg) no-repeat center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: 1100px;
+    text-align: center;
+}
+
+.navBar {
+    max-width: 1360px;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    margin: auto;
+}
+
+.menu {
+    max-width: 100%;
+}
+
+.menu li {
+    list-style-type: none;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+ul.menu a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 18px;
+    margin: 0 auto;
+    letter-spacing: 0.25em;
+    color: white;
+}
+
+.bg-Logo {
+    width: 36px;
+    height: 36px;
+    background: url('/surfers-co-assets/icon_sprites.png') -5px -5px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.bg-Logo2 {
+    width: 36px;
+    height: 36px;
+    background: url('/surfers-co-assets/icon_sprites.png') -51px -5px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.bg-IconMail {
+    width: 36px;
+    height: 36px;
+    background: url('/surfers-co-assets/icon_sprites.png') -97px -5px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.ride {
+    width: 1260px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-top: 90px;
+    padding-bottom: 100px;
+}
+
+.bg-Board {
+    width: 50%;
+    height: auto;
+    float: left;
+}
+
+/*
+.bg-Photo1 {
+    width: 70px;
+    height: 70px;
+    background: url('boards_sprites.png') -5px -5px;
+}
+
+.bg-Photo2 {
+    width: 70px;
+    height: 70px;
+    background: url('boards_sprites.png') -5px -85px;
+}
+
+.bg-Photo3 {
+    width: 70px;
+    height: 70px;
+    background: url('boards_sprites.png') -5px -165px;
+}
+
+.bg-Photo4 {
+    width: 70px;
+    height: 70px;
+    background: url('boards_sprites.png') -5px -245px;
+}
+
+.photos li {
+    list-style-type: none;
+}
+*/
+
+.surf {
+    position: relative;
+    background-image: url(surfers-co-assets/Corner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1100px;
+    height: 600px;
+    margin: auto;
+    box-shadow: 10px 10px 10px rgba(128, 128, 128, 0.34);
+}
+
+/*
+.boardsWord {
+    position: absolute;
+    top: 220px;
+    right: -234px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 127px;
+    font-weight: bold;
+    color: rgb(247, 247, 247);
+    margin: auto;
+    width: auto;
+    height: auto;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+*/
+
+/*
+.boardLeft {
+    width: 50%;
+    height: auto;
+    float: left;
+    padding: 33px;
+}
+*/
+
+.boardCentral {
+    position: absolute;
+    margin-top: 150px;
+    left: 490px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: auto;
+}
+
+.boardCentral img {
+    margin: 5px;
+    /*    clear: left;*/
+}
+
+.boardRight {
+    width: 50%;
+    padding: 8%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.boardRight li {
+    list-style-type: none;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.boardRight a {
+    font-weight: bold;
+}
+
+.stars {
+    margin: 15px;
+}
+
+.li1 {
+    color: black;
+    border-bottom: solid 3px rgb(0, 176, 255);
+}
+
+.boardRight ul:nth-child(5) {
+    color: grey;
+}
+
+
+
+/*SECOND WAVE SECTION WITH VIDEO*/
+
+/*
+.aboutUsWord {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 180px;
+    font-weight: bold;
+    color: rgba(247, 247, 247, 0.9);
+    text-transform: uppercase;
+    display: inline;
+    width: 100%;
+}*/
+
+.slogan {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: -80px;
+}
+
+.wave2 {
+    max-width: 100%;
+    height: 1000px;
+}
+
+.wave3 {
+    background: url(surfers-co-assets/wave2.jpg) no-repeat center;
+    background-size: cover;
+    max-width: 100%;
+    height: 650px;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.white1 {
+    background-color: white;
+    width: 945px;
+    height: 620px;
+    float: left;
+    position: absolute;
+    top: 300px;
+    left: 0px;
+}
+
+.white2 {
+    width: 320px;
+    height: auto;
+    float: right;
+    margin-right: 120px;
+    padding-top: 95px;
+}
+
+.white2 h4 {
+    margin: 15px 5px;
+    line-height: 1.9em;
+    text-transform: uppercase;
+}
+
+.white2 p {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-style: italic;
+    margin: 15px 5px;
+    line-height: 1.9em;
+    max-width: 320px;
+}
+
+.video {
+    position: relative;
+    top: 400px;
+    left: 300px;
+}
+
+.video img {
+    min-width: 150px;
+    height: auto;
+    clear: both;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.videoCircle {
+    position: absolute;
+    top: 75px;
+    left: 160px;
+    z-index: 2;
+}
+
+
+
+
+/*THIRD WAVE SECTION WITH TEAM*/
+
+.secTeam {
+    position: relative;
+    max-width: 100%;
+    height: 550px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 50px;
+    margin: auto;
+}
+
+.slider .swiper {
+    overflow: hidden;
+}
+
+.slider .swiper-container {
+    max-width: 850px;
+    height: auto;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slider .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.slider .swiper-slide img {
+    width: 100%;
+    height: auto;
+}
+
+/*swiper-button-next GLOBAL*/
+
+.swiper-button-prev {
+    background: url(surfers-co-assets/Button%20left%20v2.png) no-repeat center;
+    width: 50px;
+    height: 50px;
+}
+
+/*swiper-button-prev GLOBAL*/
+
+.swiper-button-next {
+    background: url(surfers-co-assets/Button%20right%20v2.png) no-repeat center;
+    width: 50px;
+    height: 50px;
+}
+
+.swiper p {
+    text-align: center;
+}
+
+/*
+.slider{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+*/
+
+/*
+.img1 {
+    position: absolute;
+    left: 450px;
+    z-index: 3;
+}
+
+.img2 {
+    position: absolute;
+    left: 700px;
+    top: 350px;
+    z-index: 4;
+}
+
+.img3 {
+    position: absolute;
+    left: 930px;
+    z-index: 3;
+}
+
+.img4 {
+    position: absolute;
+    left: 1150px;
+    top: 350px;
+    z-index: 3;
+}
+*/
+
+/*FOURTH WAVE SECTION WITH LAST UPDATE*/
+
+.update {
+    position: relative;
+    top: 0px;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+    padding: 5%;
+}
+
+
+.upTitle {
+    min-width: 300px;
+    text-align: center;
+    margin: auto;
+}
+
+.upTitle h4 {
+    margin: 20px auto;
+}
+
+.upPhotos {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: flex-start;
+    text-align: center;
+}
+
+.upPhotos p {
+    position: absolute;
+    top: 400px;
+    max-width: 310px;
+    height: auto;
+    margin: auto;
+    padding: 25px;
+    font-family: 'Raleway', sans-serif;
+    clear: left;
+}
+
+.upPhotos img {
+    width: auto;
+    margin: 20px;
+    box-shadow: 10px 10px 10px rgba(128, 128, 128, 0.34);
+    clear: left;
+}
+
+
+
+
+/*FIFTH INSTAGRAM SECTION FACEBOOK */
+
+.instaFacebook {
+    width: auto;
+    height: 620px;
+}
+
+
+/* FOOTER */
+
+.footer {
+    width: auto;
+    height: 400px;
+    background-color: black;
+}

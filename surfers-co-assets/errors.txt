@@ -1,0 +1,3 @@
+[2018-02-19 14:44:52] layer "Easy to ride, care free surfing craft that's fun for everyone, ": Expected end of input but "," found.
+[2018-02-19 14:44:52] layer "A large group of surfers invaded the coast of La Jolla Shores, ": Expected end of input but "," found.
+[2018-02-19 14:44:52] layer "@ian.walsh": Unsupported extension: walsh

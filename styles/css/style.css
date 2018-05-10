@@ -9,7 +9,7 @@
 
 @font-face {
     font-family: 'Raleway';
-    src: url(fonts/ralewaybd.ttf);
+    src: url(../../fonts/ralewaybd.ttf);
 }
 
 /*
@@ -188,7 +188,7 @@ li {
 /*FIRST WAVE SECTION WITH PRODUCTS*/
 
 .wave1 {
-    background: url(surfers-co-assets/wave1.jpg) no-repeat center;
+    background: url(../../surfers-co-assets/wave1.jpg) no-repeat center;
     background-size: cover;
     background-repeat: no-repeat;
     background-size: cover;
@@ -238,10 +238,14 @@ ul.menu a {
     color: white;
 }
 
+ul.menu a:hover {
+   background-color: aqua;
+}
+
 .bg-Logo {
     width: 36px;
     height: 36px;
-    background: url('/surfers-co-assets/icon_sprites.png') -5px -5px;
+    background: url('../../surfers-co-assets/icon_sprites.png') -5px -5px;
     background-repeat: no-repeat;
     display: inline-block;
 }
@@ -249,7 +253,7 @@ ul.menu a {
 .bg-Logo2 {
     width: 36px;
     height: 36px;
-    background: url('/surfers-co-assets/icon_sprites.png') -51px -5px;
+    background: url('../../surfers-co-assets/icon_sprites.png') -51px -5px;
     background-repeat: no-repeat;
     display: inline-block;
 }
@@ -257,7 +261,7 @@ ul.menu a {
 .bg-IconMail {
     width: 36px;
     height: 36px;
-    background: url('/surfers-co-assets/icon_sprites.png') -97px -5px;
+    background: url('../../surfers-co-assets/icon_sprites.png') -97px -5px;
     background-repeat: no-repeat;
     display: inline-block;
 }
@@ -313,7 +317,7 @@ ul.menu a {
 
 .surf {
     position: relative;
-    background-image: url(surfers-co-assets/Corner.jpg);
+    background-image: url(../../surfers-co-assets/Corner.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -432,7 +436,7 @@ ul.menu a {
 }
 
 .wave3 {
-    background: url(surfers-co-assets/wave2.jpg) no-repeat center;
+    background: url(../../surfers-co-assets/wave2.jpg) no-repeat center;
     background-size: cover;
     max-width: 100%;
     height: 650px;
@@ -564,7 +568,7 @@ ul.menu a {
 /*swiper-button-next GLOBAL*/
 
 .swiper-button-prev {
-    background: url(surfers-co-assets/Button%20left%20v2.png) no-repeat center;
+    background: url(../../surfers-co-assets/Button%20left%20v2.png) no-repeat center;
     width: 50px;
     height: 50px;
 }
@@ -572,7 +576,7 @@ ul.menu a {
 /*swiper-button-prev GLOBAL*/
 
 .swiper-button-next {
-    background: url(surfers-co-assets/Button%20right%20v2.png) no-repeat center;
+    background: url(../../surfers-co-assets/Button%20right%20v2.png) no-repeat center;
     width: 50px;
     height: 50px;
 }

@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /*    border: 1px dashed red;*/
+    border: 1px dashed red;
 }
 
 /* FONTS IN PROJECT */
@@ -166,7 +166,6 @@ p {
     display: inline-block;
 }
 
-
 li {
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
@@ -200,7 +199,7 @@ li {
 .navBar {
     max-width: 1360px;
     margin: auto;
-    padding: 10px;
+    /* padding: 10px; */
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -214,11 +213,12 @@ li {
     font-size: 30px;
     font-weight: bold;
     color: black;
-    margin: auto;
+    /* margin: auto; */
 }
 
 .menu {
     max-width: 100%;
+    margin: 0 60px;
 }
 
 .menu li {
@@ -232,14 +232,19 @@ ul.menu a {
     font-weight: bold;
     font-size: 15px;
     text-decoration: none;
-    padding: 18px;
+    /* padding: 18px; */
     margin: 0 auto;
     letter-spacing: 0.25em;
-    color: white;
+    color: black;
 }
 
 ul.menu a:hover {
    background-color: aqua;
+}
+
+.icon {
+    margin: 30px;
+    float: right;
 }
 
 .bg-Logo {
@@ -358,8 +363,8 @@ ul.menu a:hover {
 
 .boardCentral {
     position: absolute;
-    margin-top: 150px;
-    left: 490px;
+   top: 150px; 
+left: 510px;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -371,6 +376,10 @@ ul.menu a:hover {
 
 .boardCentral img {
     margin: 5px;
+    /*    clear: left;*/
+}
+.boardCentral img:hover {
+    border: 1px solid aqua;
     /*    clear: left;*/
 }
 

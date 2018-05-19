@@ -42,7 +42,8 @@
     <!--    <meta name=”twitter:url” content=”http://www.surfersco.eu” /> -->
     <meta name=”twitter:title” content=”Surfersco” />
     <!--    <meta name=”twitter:image” content=”http://www.yourdomain.com /image-name.jpg” />-->
-
+    <!-- SCRIPTS -->
+    <script src="./scripts/video.js"></script>
 </head>
 
 <body>
@@ -88,9 +89,9 @@
             <!-- ICONS -->
             <div class="icon">
                 <!--SPRITES-->
-                    <a class="bg-Logo" href="#"></a>
-                    <a class="bg-Logo2" href="#"></a>
-                    <a class="bg-IconMail" href="#"></a>
+                <a class="bg-Logo" href="#"></a>
+                <a class="bg-Logo2" href="#"></a>
+                <a class="bg-IconMail" href="#"></a>
             </div>
         </nav>
 
@@ -100,45 +101,49 @@
             <h3>We love the motion of the ocean</h3>
         </div>
         <!--BOX-->
-        <div class="surf brightness">
-            <div class="bg-Board">
-                <img src="surfers-co-assets/Board.png">
-            </div>
-            <!-- CENTRAL BOARDS -->
-            <div class="boardCentral">
-                <!--SPRITES-->
-                <!-- <ul class="photos">
+        <div>
+            <div class="surf brightness">
+                <div class="bg-Board">
+                    <img src="surfers-co-assets/Board.png">
+                </div>
+                <!-- CENTRAL BOARDS -->
+                <div class="boardCentral">
+                    <!--SPRITES-->
+                    <!-- <ul class="photos">
                     <li><img class="bg-Photo1" href="#"></li>
                     <li><img class="bg-Photo2" href="#"></li>
                     <li><img class="bg-Photo3" href="#"></li>
                     <li><img class="bg-Photo4" href="#"></li>
                 </ul> -->
-                <img src="surfers-co-assets/Photo1.jpg">
-                <img src="surfers-co-assets/Photo2.jpg">
-                <img src="surfers-co-assets/Photo3.jpg">
-                <img src="surfers-co-assets/Photo4.jpg">
-            </div>
-            <!-- RIGHT BOARDS -->
-            <div class="boardRight">
-                <h2>JR Surfboards The Donny Stoker</h2>
-                <h2>Yellow/Green Rail Fade</h2>
-                <img class="stars" src="surfers-co-assets/Star%201.png">
-                <p>(52)</p>
-                <ul>
-                    <li class="li1">Description</li>
-                    <li>Features</li>
-                    <li>Dimensions</li>
-                </ul>
-                <p>Easy to ride, care free surfing craft that's fun for everyone, paddles well, super fast down the line and
-                    great for any level of surfing depending on who rides it. The Donny Stoker, a rework on design from stokesys
-                    first ever pro model. A super easy to surf and fun board. The Donny Stoker is a board for total freesurfing
-                    expression.
-                </p>
-                <p class="price">$499.99</p>
-                <button class="btn">Buy now</button>
-                <p>
-                    <a class="blue" href="#">View all boards</a>
-                </p>
+                    <img src="surfers-co-assets/Photo1.jpg">
+                    <img src="surfers-co-assets/Photo2.jpg">
+                    <img src="surfers-co-assets/Photo3.jpg">
+                    <img src="surfers-co-assets/Photo4.jpg">
+                </div>
+                <!-- RIGHT BOARDS -->
+                <div class="boardRight">
+                    <h2>JR Surfboards The Donny Stoker</h2>
+                    <h2>Yellow/Green Rail Fade</h2>
+                    <div class="stars">
+                        <img src="surfers-co-assets/Star%201.png">
+                        <p>(52)</p>
+                    </div>
+                    <ul>
+                        <li class="li1">Description</li>
+                        <li>Features</li>
+                        <li>Dimensions</li>
+                    </ul>
+                    <p>Easy to ride, care free surfing craft that's fun for everyone, paddles well, super fast down the line
+                        and great for any level of surfing depending on who rides it. The Donny Stoker, a rework on design
+                        from stokesys first ever pro model. A super easy to surf and fun board. The Donny Stoker is a board
+                        for total freesurfing expression.
+                    </p>
+                    <p class="price">$499.99</p>
+                    <a class="btn" href="#">Buy now</a>
+                    <p>
+                        <a class="blue" href="#">View all boards</a>
+                    </p>
+                </div>
             </div>
         </div>
     </section>
@@ -163,13 +168,32 @@
                     </p>
                 </div>
             </div>
-
-            <video width="500">
-                <source src="nazwavideo.mp4" type="video/mp4">
-            </video>
-
-            <img class="videoCircle" src="surfers-co-assets/Circle.png">
-            <img src="surfers-co-assets/video2.jpg">
+            <!-- VIDEO -->
+            <div id="video-container" class="video">
+                <!-- VIDEO CONTAINER -->
+                <video id="video" width="500" height="300">
+                    <source src="videos/mikethefrog.webm" type="video/webm">
+                    <source src="videos/mikethefrog.ogv" type="video/ogv">
+                    <source src="videos/mikethefrog.mp4" type="video/mp4">
+                    <p>
+                        Your browser doesn't support HTML5 video.
+                        <a href="videos/mikethefrog.mp4">Download</a> the video instead.
+                    </p>
+                </video>
+                <!-- VIDEO-CONTROLERS -->
+                <div id="video-controls">
+                    <button type="button" id="play-pause" class="videoCircle">
+                        <img src="surfers-co-assets/Circle.png">
+                    </button>
+                    <div>
+                        <input type="range" id="seek-bar" value="0">
+                        <button type="button" id="mute" class="buttonVideo">Vol.</button>
+                        <input type="range" id="volume-bar" min="0" max="1" step="0.1" value="1">
+                        <button type="button" id="full-screen" class="buttonVideo">Full-Screen</button>
+                    </div>
+                </div>
+            </div>
+            <!-- VIDEO END-->
         </div>
     </section>
 
@@ -234,8 +258,9 @@
 
     <!-- FOURTH WAVE SECTION WITH LAST UPDATE -->
     <section class="update">
-        <div>
-            <div class="upTitle">
+        <div class="upTitle">
+            <!-- <div class="upTitle"> -->
+            <div>
                 <h4>LASTEST UPDATES</h4>
                 <img src="surfers-co-assets/X%20Icon.png">
             </div>
@@ -253,7 +278,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint neque placeat nesciunt... </p>
                 </div>
             </div>
-            <button class="btn">View all posts</button>
+            <a class="btn" href="#">View all posts</a>
         </div>
     </section>
 
@@ -266,7 +291,7 @@
         </div>
 
         <!--IMAGES FACEBOOK-->
-        <div class="fb-page" data-href="https://www.facebook.com/produktytash/" data-small-header="false" data-adapt-container-width="true"
+        <div class="fb-page fb" data-href="https://www.facebook.com/produktytash/" data-small-header="false" data-adapt-container-width="true"
             data-hide-cover="false" data-show-facepile="true">
             <blockquote cite="https://www.facebook.com/produktytash/" class="fb-xfbml-parse-ignore">
                 <a href="https://www.facebook.com/produktytash/">TASH</a>
@@ -277,8 +302,47 @@
 
     <!-- FOOTER -->
     <section class="footer">
-
+        <div class="footerBox">
+            <div class="white">
+                <p>
+                    <img src="./surfers-co-assets/Waves_col_2.png">
+                    <a href="#">About</a>
+                </p>
+                <p>
+                    <img src="./surfers-co-assets/Waves_col_2.png">
+                    <a href="#">Boards</a>
+                </p>
+                <p>
+                    <img src="./surfers-co-assets/Waves_col_2.png">
+                    <a href="#">Accesories</a>
+                </p>
+                <p>
+                    <img src="./surfers-co-assets/Waves_col_2.png">
+                    <a href="#">Blog</a>
+                </p>
+            </div>
+            <div class="white">
+                <p>
+                    <img src="./surfers-co-assets/Waves_col_2.png">
+                    <a href="#">Technology</a>
+                </p>
+                <p>
+                    <img src="./surfers-co-assets/Waves_col_2.png">
+                    <a href="#">Team</a>
+                </p>
+                <p>
+                    <img src="./surfers-co-assets/Waves_col_2.png">
+                    <a href="#">Dealers</a>
+                </p>
+                <p>
+                    <img src="./surfers-co-assets/Waves_col_2.png">
+                    <a href="#">Contact us</a>
+                </p>
+            </div>
+        </div>
     </section>
+
+
 
     <!--SWIPER-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.6/js/swiper.min.js"></script>
@@ -299,7 +363,6 @@
                 }
             });
         });
-
     </script>
 
 </body>

@@ -14,11 +14,21 @@
     <!--LINKS-->
     <!--normalize.css-->
     <link rel="stylesheet" href="styles/css/normalize.css">
+
+    <!--ANIMATIONS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+    <!-- SLICK -->
+    <link rel="stylesheet" href="slick-master/slick/slick.css">
+    <link rel="stylesheet" href="slick-master/slick/slick-theme.css">
+    <link rel="stylesheet" href="slick-master/slick/slick-new.js">
+
     <!--SWIPER-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.6/css/swiper.min.css">
 
     <!--css-->
     <link rel="stylesheet" href="styles/css/style.css">
+
     <!--fonts-->
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800,900" rel="stylesheet">
@@ -42,27 +52,32 @@
     <!--    <meta name=”twitter:url” content=”http://www.surfersco.eu” /> -->
     <meta name=”twitter:title” content=”Surfersco” />
     <!--    <meta name=”twitter:image” content=”http://www.yourdomain.com /image-name.jpg” />-->
+
     <!-- SCRIPTS -->
     <script src="./scripts/video.js"></script>
+
 </head>
 
 <body>
 
     <!-- Facebook -->
     <div id="fb-root"></div>
-    <script>(function (d, s, id) {
+    <script>
+        (function(d, s, id) {
             var js, fjs = d.getElementsByTagName(s)[0];
             if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
+            js = d.createElement(s);
+            js.id = id;
             js.src = 'https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v3.0';
             fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));</script>
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
 
     <!-- FIRST WAVE SECTION WITH PRODUCTS-->
 
-    <section class="wave1">
+    <section class="wave1 sticky" id="myHeader">
         <!-- NAVBAR -->
-        <nav class="navBar">
+        <nav class="navBar" id="header">
             <!-- LOGO -->
             <a class="logo black">Surfers Co.</a>
             <!-- CENTRAL PART OF MENU -->
@@ -136,12 +151,9 @@
                         <button class="tablinks" onclick="openCity(event, 'Dimensions')">Dimensions</button>
                     </div>
 
-                    <div id="Description"  class="tabcontent">
+                    <div id="Description" class="tabcontent">
                         <h3>Description</h3>
-                        <p>Easy to ride, care free surfing craft that's fun for everyone, paddles well, super fast down the
-                            line and great for any level of surfing depending on who rides it. The Donny Stoker, a rework
-                            on design from stokesys first ever pro model. A super easy to surf and fun board. The Donny Stoker
-                            is a board for total freesurfing expression.</p>
+                        <p>Easy to ride, care free surfing craft that's fun for everyone, paddles well, super fast down the line and great for any level of surfing depending on who rides it. The Donny Stoker, a rework on design from stokesys first ever pro model. A super easy to surf and fun board. The Donny Stoker is a board for total freesurfing expression.</p>
                         <span onclick="this.parentElement.style.display='none'"></span>
                     </div>
 
@@ -181,9 +193,7 @@
                 <div class="white2">
                     <h4>We are surfers co.</h4>
                     <img src="surfers-co-assets/X%20Icon.png">
-                    <p>Lorem ipsum dolor sit amet, aeneam consectetur adipiscing elit. Fusce iaculis feugiat arcunum fermentum
-                        hendrerit. Suspendisse auctor labor nisi, et interdum diam facilisis, aliquam pulvinar semi egetis
-                        belle sollicitudin ut. Nullam tincidun finibustus scelerisque.</p>
+                    <p>Lorem ipsum dolor sit amet, aeneam consectetur adipiscing elit. Fusce iaculis feugiat arcunum fermentum hendrerit. Suspendisse auctor labor nisi, et interdum diam facilisis, aliquam pulvinar semi egetis belle sollicitudin ut. Nullam tincidun finibustus scelerisque.</p>
                     <p>
                         <a class="blue" href="#">Read more</a>
                     </p>
@@ -226,7 +236,7 @@
             <div class="slogan">
                 <h5 class="ourTeam">Our team</h5>
             </div>
-            <!--SWIPER-->
+            <!-- SWIPER -->
             <div class="swiper">
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
@@ -266,13 +276,58 @@
                             </div>
                         </div>
                     </div>
-                    <!--Add Arrows -->
+                    <!-- Add Arrows -->
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
                 </div>
             </div>
         </div>
     </section>
+
+
+
+
+    <!-- slick test -->
+    <section class="slickBox">
+        <!-- slider -->
+        <div class="slider center">
+            <!-- <button type="button" class="slick-prev" class="slick-prev">Previous</button> -->
+            <div class="slide">
+                <img class="img1" src="surfers-co-assets/Team%20card%201.jpg">
+                <p>dsfdfsdf</p>
+            </div>
+            <div class="slide">
+                <img class="img1" src="surfers-co-assets/Team%20card%201.jpg">
+                <p>dsfdfsdf</p>
+            </div>
+            <div class="slide">
+                <img class="img1" src="surfers-co-assets/Team%20card%201.jpg">
+                <p>dsfdfsdf</p>
+            </div>
+            <div class="slide">
+                <img class="img1" src="surfers-co-assets/Team%20card%201.jpg">
+                <p>dsfdfsdf</p>
+            </div>
+            <div class="slide">
+                <img class="img1" src="surfers-co-assets/Team%20card%201.jpg">
+                <p>dsfdfsdf</p>
+            </div>
+            <div class="slide">
+                <img class="img1" src="surfers-co-assets/Team%20card%201.jpg">
+                <p>dsfdfsdf</p>
+            </div>
+            <!-- <button type="button" class="slick-next" class="slick-next">Next</button> -->
+        </div>
+    </section>
+
+    <!-- slick test -->
+
+
+
+
+
+
+
 
 
 
@@ -311,13 +366,11 @@
         </div>
 
         <!--IMAGES FACEBOOK-->
-        <div class="fb-page fb" data-href="https://www.facebook.com/produktytash/" data-small-header="false" data-adapt-container-width="true"
-            data-hide-cover="false" data-show-facepile="true">
+        <!--<div class="fb-page fb" data-href="https://www.facebook.com/produktytash/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
             <blockquote cite="https://www.facebook.com/produktytash/" class="fb-xfbml-parse-ignore">
                 <a href="https://www.facebook.com/produktytash/">TASH</a>
             </blockquote>
-        </div>
-
+        </div>-->
     </section>
 
     <!-- FOOTER -->
@@ -367,7 +420,7 @@
     <!--SWIPER-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.6/js/swiper.min.js"></script>
     <script>
-        document.addEventListener("DOMContentLoaded", function (event) {
+        document.addEventListener("DOMContentLoaded", function(event) {
             var swiper = new Swiper('.swiper-container', {
                 slidesPerView: 4,
                 spaceBetween: 5,
@@ -404,6 +457,82 @@
         // Get the element with id="defaultOpen" and click on it
         document.getElementById("defaultOpen").click();
     </script>
+
+    <!--jQuery-->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.7.0.min.js" integrity="sha256-/05Jde9AMAT4/o5ZAI23rUf1SxDYTHLrkOco0eyRV84=" crossorigin="anonymous"></script>
+
+    <!--SLICK-->
+    <script type="text/javascript" src="slick-master/slick/slick.min.js"></script>
+
+    <!-- slick script -->
+    <script type="text/javascript">
+        var $slickEl = $('.center');
+
+        $slickEl.on('init reInit afterChange', function(event, slick, currentSlide, nextSlide) {
+            var i = (currentSlide ? currentSlide : 0) + 1;
+        });
+
+        $slickEl.slick({
+            centerMode: true,
+            centerPadding: '100px',
+            slidesToShow: 5,
+            focusOnSelect: true,
+            dots: false,
+            infinite: true,
+            responsive: [{
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '60px',
+                        slidesToShow: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '60px',
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+    </script>
+
+    <!--STICKY HEADER-->
+    <script>
+        document.addEventListener("DOMContentLoaded", function(event) {
+            // When the user scrolls the page, execute myFunction 
+            window.onscroll = function() {
+                onScrollSticky()
+            };
+
+            // Get the header
+            var header = document.getElementById("myHeader");
+
+            var menu = document.getElementById("header");
+
+            // Get the offset position of the navbar
+            var sticky = menu.offsetHeight;
+            console.log(sticky);
+
+            function onScrollSticky() {
+                if (window.pageYOffset >= sticky) {
+                    header.classList.add("sticky");
+                    menu.classList.add("animated");
+                    menu.classList.add("bounceInDown");
+                } else {
+                    header.classList.remove("sticky");
+                    menu.classList.remove("animated");
+                    menu.classList.remove("bounceInDown");
+                }
+            }
+        });
+    </script>
+
 
 </body>
 
